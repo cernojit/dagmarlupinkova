@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dagmarlupinkova/static/css/main.6141916d.chunk.css",
+    "main.js": "/dagmarlupinkova/static/js/main.a84507d7.chunk.js",
+    "main.js.map": "/dagmarlupinkova/static/js/main.a84507d7.chunk.js.map",
+    "runtime-main.js": "/dagmarlupinkova/static/js/runtime-main.79a7d1a5.js",
+    "runtime-main.js.map": "/dagmarlupinkova/static/js/runtime-main.79a7d1a5.js.map",
+    "static/js/2.137fd108.chunk.js": "/dagmarlupinkova/static/js/2.137fd108.chunk.js",
+    "static/js/2.137fd108.chunk.js.map": "/dagmarlupinkova/static/js/2.137fd108.chunk.js.map",
+    "index.html": "/dagmarlupinkova/index.html",
+    "precache-manifest.395eca27341ddd9c51fbf4c070989343.js": "/dagmarlupinkova/precache-manifest.395eca27341ddd9c51fbf4c070989343.js",
+    "service-worker.js": "/dagmarlupinkova/service-worker.js",
+    "static/css/main.6141916d.chunk.css.map": "/dagmarlupinkova/static/css/main.6141916d.chunk.css.map",
+    "static/js/2.137fd108.chunk.js.LICENSE.txt": "/dagmarlupinkova/static/js/2.137fd108.chunk.js.LICENSE.txt",
+    "static/media/img-home.jpg": "/dagmarlupinkova/static/media/img-home.7d779fc8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79a7d1a5.js",
+    "static/js/2.137fd108.chunk.js",
+    "static/css/main.6141916d.chunk.css",
+    "static/js/main.a84507d7.chunk.js"
+  ]
+}
