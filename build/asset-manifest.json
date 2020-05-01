@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/dagmarlupinkova/static/css/main.6141916d.chunk.css",
-    "main.js": "/dagmarlupinkova/static/js/main.a84507d7.chunk.js",
-    "main.js.map": "/dagmarlupinkova/static/js/main.a84507d7.chunk.js.map",
+    "main.css": "/dagmarlupinkova/static/css/main.1b6326b3.chunk.css",
+    "main.js": "/dagmarlupinkova/static/js/main.de423afa.chunk.js",
+    "main.js.map": "/dagmarlupinkova/static/js/main.de423afa.chunk.js.map",
     "runtime-main.js": "/dagmarlupinkova/static/js/runtime-main.79a7d1a5.js",
     "runtime-main.js.map": "/dagmarlupinkova/static/js/runtime-main.79a7d1a5.js.map",
-    "static/js/2.137fd108.chunk.js": "/dagmarlupinkova/static/js/2.137fd108.chunk.js",
-    "static/js/2.137fd108.chunk.js.map": "/dagmarlupinkova/static/js/2.137fd108.chunk.js.map",
+    "static/js/2.b6390071.chunk.js": "/dagmarlupinkova/static/js/2.b6390071.chunk.js",
+    "static/js/2.b6390071.chunk.js.map": "/dagmarlupinkova/static/js/2.b6390071.chunk.js.map",
     "index.html": "/dagmarlupinkova/index.html",
-    "precache-manifest.395eca27341ddd9c51fbf4c070989343.js": "/dagmarlupinkova/precache-manifest.395eca27341ddd9c51fbf4c070989343.js",
+    "precache-manifest.b51f5127c4b178555f47be202ba908ab.js": "/dagmarlupinkova/precache-manifest.b51f5127c4b178555f47be202ba908ab.js",
     "service-worker.js": "/dagmarlupinkova/service-worker.js",
-    "static/css/main.6141916d.chunk.css.map": "/dagmarlupinkova/static/css/main.6141916d.chunk.css.map",
-    "static/js/2.137fd108.chunk.js.LICENSE.txt": "/dagmarlupinkova/static/js/2.137fd108.chunk.js.LICENSE.txt",
-    "static/media/img-home.jpg": "/dagmarlupinkova/static/media/img-home.7d779fc8.jpg"
+    "static/css/main.1b6326b3.chunk.css.map": "/dagmarlupinkova/static/css/main.1b6326b3.chunk.css.map",
+    "static/js/2.b6390071.chunk.js.LICENSE.txt": "/dagmarlupinkova/static/js/2.b6390071.chunk.js.LICENSE.txt",
+    "static/media/ImgContainer.png": "/dagmarlupinkova/static/media/ImgContainer.3342d57f.png",
+    "static/media/auction.svg": "/dagmarlupinkova/static/media/auction.a384d233.svg",
+    "static/media/family.svg": "/dagmarlupinkova/static/media/family.c4e7f2c9.svg",
+    "static/media/house.svg": "/dagmarlupinkova/static/media/house.2dea37c4.svg",
+    "static/media/money.svg": "/dagmarlupinkova/static/media/money.0ae90bcc.svg",
+    "static/media/nav_icon.svg": "/dagmarlupinkova/static/media/nav_icon.c4f9109e.svg",
+    "static/media/obcanske_pravo.svg": "/dagmarlupinkova/static/media/obcanske_pravo.041116e0.svg",
+    "static/media/portrait.png": "/dagmarlupinkova/static/media/portrait.4a943510.png"
   },
   "entrypoints": [
     "static/js/runtime-main.79a7d1a5.js",
-    "static/js/2.137fd108.chunk.js",
-    "static/css/main.6141916d.chunk.css",
-    "static/js/main.a84507d7.chunk.js"
+    "static/js/2.b6390071.chunk.js",
+    "static/css/main.1b6326b3.chunk.css",
+    "static/js/main.de423afa.chunk.js"
   ]
 }
