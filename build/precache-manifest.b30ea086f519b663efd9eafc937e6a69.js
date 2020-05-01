@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d68689031eebcf6c050695e09a7972f",
+    "revision": "a402ef1c7121b70bb9c3dd783aa45f50",
     "url": "/dagmarlupinkova/index.html"
   },
   {
-    "revision": "7c2c0c3d0ca251f335a1",
+    "revision": "1cd2a830dfaff607eaf1",
     "url": "/dagmarlupinkova/static/css/main.1b6326b3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dagmarlupinkova/static/js/2.b6390071.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7c2c0c3d0ca251f335a1",
-    "url": "/dagmarlupinkova/static/js/main.de423afa.chunk.js"
+    "revision": "1cd2a830dfaff607eaf1",
+    "url": "/dagmarlupinkova/static/js/main.4b300bd5.chunk.js"
   },
   {
     "revision": "bd48635c0fa5e36eef4a",

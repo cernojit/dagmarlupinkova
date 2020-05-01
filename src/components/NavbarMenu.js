@@ -4,9 +4,9 @@ const NavbarMenu = (props) => {
 	return(
 		<div className={props.className} id="navbar-collapse-uarr">
 	      <ul className="nav navbar-nav navbar-right">
-	        <li><a href="/#home" title="domů" className="active "  >Domů</a></li>
-	        <li><a href="/#info" title="info"  className="" > Informace</a></li>
-	        <li><a href="/#kontakt" title="kontakt" className="" >Kontakt</a></li>          
+	        <li><a href="#home" rel="noreferrer" title="domů" className="active "  >Domů</a></li>
+	        <li><a href="#info" rel="noreferrer" title="info"> Informace</a></li>
+	        <li><a href="#kontakt" rel="noreferrer" title="kontakt" >Kontakt</a></li>          
 	      </ul>
     </div>
 	)
