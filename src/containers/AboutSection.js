@@ -1,17 +1,18 @@
-import React from 'react'
+import React from 'react';
+import portrait from '../img/portrait.png'
 
 const AboutSection = () => {
 	return(
 		<div className="section-container border-section-container" id="info">
     <div className="container">
       <div className="row">
-        <div className="col-md-7 ">
+        <div className="col-md-5">
           <div className="text-center">
-              <img src="./img-02.jpg" alt="portrait" style={{position: 'left', width: '100%', paddingTop: '40px'}}/>
+              <img src={portrait} alt="portrait" />
           </div>
 		    </div>
 
-	      <div className="col-md-5">
+	      <div className="col-md-7">
 					<h2>O mě</h2>
 					<div>
 						<p>Samostatná advokátka vykonávající generální advokátní praxi od 1.1.2000 

@@ -7,8 +7,8 @@ const Navbar = (props) => {
 		<header className={props.className}>
 		  <nav className="navbar navbar-fixed-top navbar-default">
 		    <div className="container">
-	      	<NavbarButton/>
-	      	<NavbarMenu/>
+	      	<NavbarButton handleClick={props.handleClick}/>
+	      	<NavbarMenu className={props.navClass}/>
 		    </div>
 	    </nav>
 	  </header>

@@ -1,18 +1,25 @@
-import React from 'react'
+import React from 'react';
+import Icon from '../img/nav_icon.svg'
 
-const NavbarButton = () => {
+const NavbarButton = ({ handleClick }) => {
 	return(
-		<div className="navbar-header col-md-offset-3">
-			<button type="button" className="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+		<div className="navbar-header">
+			<button type="button" 
+						className="navbar-toggle uarr collapsed" 
+						data-toggle="collapse" 
+						data-target="#navbar-collapse-uarr"
+						onClick={handleClick}>
 	      <span className="sr-only">Toggle navigation</span>
 	      <span className="icon-bar"></span>
 	      <span className="icon-bar"></span>
 	      <span className="icon-bar"></span>
 	    </button>
-	    <a className="navbar-brand " href="." title="Lupínková">
-	        <i className="fa fa-university fa-2x" aria-hidden="true"></i>
-	        Lupínková
-	    </a>
+	    <div className="nav-icon ">
+	    	<a className="navbar-brand" href="." title="Lupínková">
+		        <img src={Icon} alt="icon"  className="navbar-logo-img"/>   
+				</a>
+				<a className="navbar-brand title" href="./">Lupínková</a>
+			</div>
     </div>
 	)
 }

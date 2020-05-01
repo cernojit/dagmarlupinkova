@@ -11,7 +11,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html {
-    font-family: sans-serif;
+    font-family: Lato, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -305,13 +305,13 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 14px;
     -webkit-tap-highlight-color: transparent
 }
 
 body {
-    font-family: Fira Sans, Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-family: Lato, Fira Sans, Helvetica, Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.81;
     color: #555;
     background-color: #fff
@@ -4347,7 +4347,7 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-brand {
-    color: #777
+    color: #5c4dfc
 }
 
 .navbar-default .navbar-brand:focus,
@@ -5470,7 +5470,7 @@ body {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: right;
     padding: 12% 0
 }
 

@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
-import '../App.css';
+import '../index.css';
 // import '../bootstrap.css';
 import '../main.a3f694c0.css';
-import '../index.css';
 import Navbar from './Navbar';
 import ImgContainer from './ImgContainer';
 import Contact from './Contact';
 import Footer from './Footer';
 import AboutSection from './AboutSection';
-import IconSection from './IconSection'
+import IconSection from './IconSection';
 
 // import axios from 'axios'
 
@@ -17,31 +16,36 @@ class App extends Component {
 		super();
 		this.state={
 			show: true,
-			scrollPos: 0
+			scrollPos: 0,
+			showNav: false
 		}
 		this.handleScroll = this.handleScroll.bind(this);
+		this.navButtonClick = this.navButtonClick.bind(this);
 	}
+
+	
 
 	componentDidMount(){
 		window.addEventListener("scroll", this.handleScroll);
-		window.addEventListener("click", this.handleClick);
-
 	}
 
 	componentWillUnmount(){
 		window.removeEventListener("scroll", this.handleScroll);
-		window.removeEventListener("click", this.handleClick);
-
 	}
 
 	handleScroll(){
 		const {scrollPos} = this.state;
-		console.log(window.scrollY)
 		this.setState({
       scrollPos: document.body.getBoundingClientRect().top,
       show: document.body.getBoundingClientRect().top > scrollPos  || window.scrollY === 0
     });
+    if(!this.state.show){
+    	this.setState({showNav: false})
+    }
+	}
 
+	navButtonClick(){
+		this.setState({showNav: !this.state.showNav});
 	}
 
 	render(){
@@ -49,6 +53,8 @@ class App extends Component {
 			<div>
 				<Navbar 
 					className={this.state.show ? "" : "hidden"}
+					navClass={!this.state.showNav ? "collapse navbar-collapse" : "collapse navbar-collapse in"} 
+					handleClick={this.navButtonClick}
 				/>
 				<ImgContainer/>
 				<AboutSection />
@@ -56,6 +62,7 @@ class App extends Component {
 				<Contact/>
 				<Footer/>
 			</div>
+
 			)
 	}
   
