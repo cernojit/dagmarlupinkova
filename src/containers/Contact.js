@@ -5,7 +5,7 @@ import Map from '../components/Map'
 
 const Contact = () => {
 	return(
-		<div className="section-container " id="kontakt">
+		<div className="section-container " id={"kontakt"}>
 	    <div className="container">
 	      <div className="row">
 	        <div className="col-xs-12">

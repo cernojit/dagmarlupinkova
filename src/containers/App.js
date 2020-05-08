@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../index.css';
-// import '../bootstrap.css';
 import '../main.a3f694c0.css';
 import Navbar from './Navbar';
 import ImgContainer from './ImgContainer';

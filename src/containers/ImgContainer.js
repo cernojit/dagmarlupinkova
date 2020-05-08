@@ -3,7 +3,7 @@ import Bg from '../img/ImgContainer.png';
 
 const ImgContainer = () => {
 	return(
-		<div className="white-text-container background-image-container" style={{backgroundImage: `url(${Bg})`}} id ="home">
+		<div className="white-text-container background-image-container" style={{backgroundImage: `url(${Bg})`}} id ={"home"}>
 		    <div className="opacity"></div>
 		    <div className="container">
 		        <div className="row">

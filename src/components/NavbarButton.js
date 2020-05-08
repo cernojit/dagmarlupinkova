@@ -15,10 +15,10 @@ const NavbarButton = ({ handleClick }) => {
 	      <span className="icon-bar"></span>
 	    </button>
 	    <div className="nav-icon ">
-	    	<a className="navbar-brand" href="." title="Lupínková">
+	    	<a className="navbar-brand" href="/dagmarlupinkova" title="Lupínková">
 		        <img src={Icon} alt="icon"  className="navbar-logo-img"/>   
 				</a>
-				<a className="navbar-brand title" href="./">Lupínková</a>
+				<a className="navbar-brand title" href="/dagmarlupinkova">Lupínková</a>
 			</div>
     </div>
 	)
