@@ -28790,18 +28790,19 @@ class Form extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
       if (this.state.valid && !this.state.checkBox) {
         document.getElementById('hidden-after').className += "hidden";
-        document.getElementById('hidden-before').className -= "hidden";
-        fetch('http://localhost:3000/send', {
-          method: 'post',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            fname: this.state.field.fname,
-            email: this.state.field.email,
-            message: this.state.field.message
-          })
-        }).then(response => response.json()).then(console.log('Email should be sent')).then(this.handleClearForm()).catch(err => console.log(err));
+        document.getElementById('hidden-before').className -= "hidden"; // fetch('http://localhost:3000/send', {
+        //  		method: 'post',
+        //  		headers: {'Content-Type': 'application/json'},
+        //  		body: JSON.stringify({
+        //  			fname: this.state.field.fname,
+        //  			email: this.state.field.email,
+        //  			message: this.state.field.message
+        //  		})
+        //  	})
+        //  	.then(response => response.json())
+        //  	.then(console.log('Email should be sent'))
+        //  	.then(this.handleClearForm())
+        //  	.catch(err => console.log(err))
       } else if (!this.state.valid) {
         document.getElementById('alert').className -= "hidden";
       } else {
