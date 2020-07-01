@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Icon from '../../img/nav_icon.svg';
 import './navbar.css';
-import 'tachyons'
 
 class NavbarTachyons extends Component {
 	constructor (){

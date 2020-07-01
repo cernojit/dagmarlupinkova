@@ -5,7 +5,8 @@ import ContactSection from '../components/contactPage/ContactSection';
 import Footer from '../components/footer/Footer';
 import AboutSection from '../components/about/AboutSection';
 import IconSection from './IconSection';
-import NavbarTachyons from '../components/navbar/Navbar'
+import NavbarTachyons from '../components/navbar/Navbar';
+import 'tachyons'
 
 class App extends Component {
 	constructor(){

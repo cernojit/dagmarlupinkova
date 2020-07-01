@@ -1,11 +1,10 @@
 import React from 'react';
-import Bg from '../img/ImgContainer.png';
-import 'tachyons'
+import Bg from '../img/ImgContainer.png'
 
 const ImgContainer = () => {
 	return(
 		<div className="img-container img-container-background" style={{backgroundImage: `url(${Bg})`}} id ={"home"}>
-	            <div className="ph6-ns w-100 w-100-ns pa4 pa2-ns pa2-m pb6-ns">
+	            <div className="ph6-ns w-100 w-100-ns pa4 pa2-ns pa6-m pb6-ns">
 		            	<div className="fw7 f2 mb2 ">
 		            		<h2>Advokátka</h2>
 		            	</div>

@@ -1,12 +1,11 @@
 import React from 'react';
-import portrait from '../../img/portrait.png';
-import 'tachyons'
+import portrait from '../../img/portrait.png'
 
 const AboutSection = () => {
 	return(
 		<div className=" static-ns center w-100 pa6-ns dt--fixed ph6-ns pa2 pb4" id="info">
 	    <div className="db dtc-ns  w-100-ns">
-	        <div className="db dtc-ns db-m tl-ns pa4 v-mid w-30-ns w-30-ns w-100-m pa3-m pa2-ns w-100 mr3">
+	        <div className="db dtc-ns db-m tl-ns pa4 v-mid w-30-ns  w-100-m pa3-m pa2-ns w-100 mr3">
 	          <div className="center">
 	              <img src={portrait} id="portrait" alt="portrait" />
 	          </div>

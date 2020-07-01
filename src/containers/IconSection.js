@@ -3,8 +3,7 @@ import picFamily from '../img/family.svg';
 import picObcanske from '../img/obcanske_pravo.svg';
 import picNemovitosti from '../img/house.svg';
 import picInsolvence from '../img/money.svg';
-import picTrestni from '../img/auction.svg';
-import 'tachyons'
+import picTrestni from '../img/auction.svg'
 
 
 const IconSection = () => {

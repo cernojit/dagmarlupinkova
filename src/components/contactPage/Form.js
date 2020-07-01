@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import './form.css'
+import React, {Component} from 'react'
 
 class Form extends Component {
 	constructor(props) {
@@ -11,24 +10,31 @@ class Form extends Component {
 				message: ''				
 			},
 	  	checkBox: false,
-	  	valid: false
+	  	valid: {
+				fname: false, 
+				email: false, 
+				message: false				
+			}
 		}
 	}
 
 	handleInput = (event) => {
 		const pattern = /\S+@\S+\.\S+/;
-		const {field} = {...this.state};
+		const {field, valid} = {...this.state};
 		const {name,value} = event.target;
 		field[name] = value;
 		if(value === ''){
-			document.getElementById([name]).classList.add('wrongInput');
-			this.setState({valid: false})
+			document.getElementById([name]).classList.add("bw1","b--red");
+			valid[name] = false;
+			this.setState({valid: valid})
 		} else if(name==="email" && !this.state.field[name].match(pattern)){
-			document.getElementById([name]).classList.add('wrongInput');
-			this.setState({valid: false})
+			document.getElementById([name]).classList.add("bw1","b--red");
+			valid[name] = false;
+			this.setState({valid: valid})
  		} else {
-			document.getElementById([name]).classList.remove('wrongInput');
-			this.setState({valid: true})
+			document.getElementById([name]).classList.remove("bw1","b--red");
+			valid[name] = true;
+			this.setState({valid: valid})
 		}		
 		this.setState({field: field});
 	}
@@ -38,20 +44,26 @@ class Form extends Component {
 	}
 
 	validate = () => {
-		Object.entries(this.state.field).forEach(([key, value]) => {
-				if (value === ''){
-					this.setState({valid: false})
-					document.getElementById([key]).classList.add('wrongInput');
-				}
-			})
+		let isValid = true;
+		Object.entries(this.state.valid).forEach(([key, value]) => {
+			console.log(key, value)
+			console.log(document.getElementById(key))
+			if (!value) {
+				isValid = false;
+				document.getElementById(key).classList.add("bw1","b--red");
+			} 
+		})
+		return isValid;
 	}
 
 	onButtonClick = (event) => {
 		event.preventDefault();
-		this.validate();
-		if(this.state.valid && !this.state.checkBox){
-			document.getElementById('hidden-after').className+="hidden";
-    	document.getElementById('hidden-before').className -="hidden";
+		const isValid = this.validate();
+		if (!isValid){
+			document.getElementById('alert').classList.remove("hidden");	
+		} else if (isValid && !this.state.checkBox){
+			document.getElementById('hidden-after').classList.add("hidden");
+    	document.getElementById('hidden-before').classList.remove("hidden");
 			fetch('http://localhost:3000/send', {
 		  		method: 'post',
 		  		headers: {'Content-Type': 'application/json'},
@@ -64,12 +76,10 @@ class Form extends Component {
 		  	.then(response => response.json())
 		  	.then(console.log('Email should be sent'))
 		  	.then(this.handleClearForm())
-		  	.catch(err => console.log(err))
-		} else if(!this.state.valid){
-			document.getElementById('alert').className-="hidden";			
-		} else {
-			document.getElementById('hidden-after').classList.add(" hidden");
-    	document.getElementById('hidden-before').className -="hidden";
+		  	.catch(err => console.log(err))	
+		} else if(isValid  && this.checkBox){
+			document.getElementById('hidden-after').classList.add("hidden");
+    	document.getElementById('hidden-before').classList.remove("hidden");
     	this.handleClearForm();
 		}
 	}
@@ -81,7 +91,12 @@ class Form extends Component {
 			email: '', 
 			message: ''
 			},
-  		checkBox: false
+  		checkBox: false,
+  		valid: {
+				fname: false, 
+				email: false, 
+				message: false				
+			}
 		})
 	}
 
@@ -92,7 +107,7 @@ class Form extends Component {
         	<fieldset id="hidden-after" className="ba b--transparent ph0 mh0 ">
         		<div className="mt3">
 							<input 
-								className="pa3 input-reset ba hover-black border-box b--black-20 br2 w-100" 
+								className="pa3 input-reset ba hover-black border-box b--black-20 br2 w-100 " 
 								id="fname"
 								type="name" 
 								name="fname"  
@@ -102,7 +117,7 @@ class Form extends Component {
 						</div>
 						<div className="mt3">
 	        		<input 
-	        			className="pa3 input-reset ba hover-black border-box b--black-20 br1 w-100" 
+	        			className="pa3 input-reset ba hover-black border-box b--black-20 br1 w-100 " 
 	        			id="email"
 	        			type="email" 
 	        			name="email"  
@@ -113,8 +128,9 @@ class Form extends Component {
 	        	<div className="mt3">
 	        	  <textarea 
 	        	  	id="message" 
-	        	  	className="pa3 db border-box hover-black w-100 ba b--black-20 br2 mb3" 
+	        	  	className="pa3 db border-box hover-black w-100 ba b--black-20 br2 mb3 " 
 	        	  	name="message" 
+	        	  	rows="4"
 	        	  	placeholder="Napište Vaší zprávu"
 								onChange={this.handleInput}
 								>
@@ -125,8 +141,8 @@ class Form extends Component {
 	        			Vyplňte všechna pole
 	        		</label>
 	        	</div>
-	        	<div className="mt3">
-	        	 <label className="pa0 ma0 lh-copy f6 pointer hidden ">
+	        	<div className="mt3 ">
+	        	 <label className="pa0 ma0 lh-copy f6 pointer hidden">
 	        	 	<input type="checkbox" onChange = {this.handleChange}/> Remember me
 	        	 </label>
 	        	</div>
@@ -139,7 +155,7 @@ class Form extends Component {
 				    	</button>
 				    </div>
       		</fieldset>
-      		<div id="hidden-before" className="hidden">
+      		<div id="hidden-before" className="hidden mt4">
 						<div className="alert alert-success " role="alert">Vaše zpráva byla úspěšně odeslána
 						</div>
       		</div>
