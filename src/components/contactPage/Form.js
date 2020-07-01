@@ -64,7 +64,7 @@ class Form extends Component {
 		} else if (isValid && !this.state.checkBox){
 			document.getElementById('hidden-after').classList.add("hidden");
     	document.getElementById('hidden-before').classList.remove("hidden");
-			fetch('http://localhost:3000/send', {
+			fetch('https://apologetic-pylon-95577.herokuapp.com/send', {
 		  		method: 'post',
 		  		headers: {'Content-Type': 'application/json'},
 		  		body: JSON.stringify({
