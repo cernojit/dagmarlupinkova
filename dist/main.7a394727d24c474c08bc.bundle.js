@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -28791,7 +28791,7 @@ class Form extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       } else if (isValid && !this.state.checkBox) {
         document.getElementById('hidden-after').classList.add("hidden");
         document.getElementById('hidden-before').classList.remove("hidden");
-        fetch('http://localhost:3000/send', {
+        fetch('https://apologetic-pylon-95577.herokuapp.com/send', {
           method: 'post',
           headers: {
             'Content-Type': 'application/json'
