@@ -21,8 +21,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-scrollable-anchor": "^0.6.1",
-    "tachyons": "^4.12.0",
-    "webpack": "^4.43.0"
+    "tachyons": "^4.12.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,8 +30,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "dev": "nodemon server.js",
-    "heroku-postbuild": "webpack -p"
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
